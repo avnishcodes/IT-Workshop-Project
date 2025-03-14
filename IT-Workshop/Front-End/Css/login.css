@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+}
+.navbar ul li {
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  color: black;
+  padding-bottom: 6px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.navbar ul li::before {
+  content: "";
+  width: 0px;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: all 0.5s;
+  background-color: rgb(18, 246, 197);
+}
+
+.navbar ul li:hover::before {
+  width: 100%;
+}
+
+.navbar button {
+
+  cursor: pointer;
+   background-color: blue;
+  font-weight: bold;
+}
+
+
+/*===================*(navbar)*===================*/
